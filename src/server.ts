@@ -111,7 +111,7 @@ import { Car, cars as cars_list } from './cars';
       if(!id || !type || !model || !cost){
         return res.status(400)
                 .send('all fields (Id,Type,Model and Cost are required');
-      }
+      } 
 
       cars.push({ make: 'tesla', type: type, model: model, cost: cost, id: id });
       return res.status(200)
